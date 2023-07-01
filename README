@@ -1,0 +1,9 @@
+This project is NeurotechUofT's submission for NeurotechX. It is a microsleep detection and alert system.
+
+required packages: tensorflow, keras, pyOpenBCI, mne
+
+to run: Install required packages (some have to be built from source) on a Raspberry Pi 4b running Raspbian. Connect cyton bluetooth dongle to the Raspberry Pi 4b. Connect Arduino digital output pins to Raspberry Pi GPIO pins 5 and 6. Connect buzzer to Rpi GPIO Pin 4. Ensure EEG sensors are positioned at O1 and O2 of the 10-20 model, and that they are connected to the first two input pins of the Cyton board. On the Rpi, run sudo run_trained_model.py with administrator privileges. 
+
+The supplied jupyter notebook is strictly for training the model and as such is superfluous for running the already trained model. It is there solely for completion and reproducibility purposes. The training data is too large to be uploaded to GitHub, so it can be found at the following Google Drive link: . The file must be extracted into the same folder as the notebook for it to run.
+
+
